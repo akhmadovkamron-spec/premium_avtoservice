@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Auto Service</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,14 +20,21 @@
             <p>AUTO SERVICE</p>
         </div>
 
-        <nav>
+        <nav id="navMenu">
             <a href="#">Главная</a>
             <a href="#services">Услуги</a>
+            <a href="#advantages">Почему мы</a>
             <a href="#about">О нас</a>
             <a href="#gallery">Галерея</a>
             <a href="#contact">Контакты</a>
+            <a href="price.html">Прайс</a>
         </nav>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
 
+        </div>
         <div class="phone">
             <h3>+998 (90) 972-20-02</h3>
             <span>Ежедневно с 9:00 до 21:00</span>
@@ -44,6 +51,8 @@
 
         <h2>ПРОФЕССИОНАЛЬНЫЙ</h2>
 
+        <div class="hero-line"></div>
+
         <h1>АВТОСЕРВИС</h1>
 
         <p>BMW • MERCEDES • AUDI • PORSCHE</p>
@@ -54,6 +63,32 @@
 
     </div>
 
+</section>
+
+<section class="stats">
+    <div class="container stats-grid">
+
+        <div class="stat-item">
+            <span class="counter" data-target="2500">0</span>
+            <p>Автомобилей обслужено</p>
+        </div>
+
+        <div class="stat-item">
+            <span class="counter" data-target="10">0</span>
+            <p>Лет опыта</p>
+        </div>
+
+        <div class="stat-item">
+            <span class="counter" data-target="15">0</span>
+            <p>Специалистов</p>
+        </div>
+
+        <div class="stat-item">
+            <span class="counter" data-target="99">0</span>
+            <p>Довольных клиентов</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="services" class="services">
@@ -74,37 +109,37 @@
         <div class="service-grid">
 
             <div class="card">
-                <i class="fas fa-search"></i>
+                <img src="svg/diagnostic.svg" class="service-icon" alt="Компьютерная диагностика">
                 <h3>Диагностика</h3>
                 <p>Компьютерная диагностика всех систем</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-engine-warning"></i>
+                <img src="svg/engine.svg" alt="Ремонт двигателя" class="service-icon">
                 <h3>Ремонт двигателя</h3>
                 <p>Капитальный и текущий ремонт</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-cog"></i>
+                <img src="svg/gearbox.svg" class="service-icon" alt="Ремонт КПП">
                 <h3>Ремонт КПП</h3>
                 <p>Замена и ремонт коробки передач</p>
             </div>
-
+            
             <div class="card">
-                <i class="fas fa-circle"></i>
+            <img src="svg/brake.svg" class="service-icon" alt="Тормозная система">
                 <h3>Тормозная система</h3>
                 <p>Обслуживание тормозов</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-tools"></i>
+                <img src="svg/suspension.svg" class="service-icon" alt="Ремонт подвески">
                 <h3>Подвеска</h3>
                 <p>Диагностика и ремонт подвески</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-oil-can"></i>
+                <img src="svg/oil.svg" class="service-icon" alt="Замена масла">
                 <h3>Техническое ТО</h3>
                 <p>Полное обслуживание автомобиля</p>
             </div>
@@ -113,6 +148,58 @@
 
     </div>
 
+</section>
+
+<section class="advantages" id="advantages">
+
+    <div class="container">
+
+        <h2>Почему выбирают нас</h2>
+
+        <div class="advantages-grid">
+
+            <div class="advantage-card">
+                <h3>12+ лет опыта</h3>
+                <p>Работаем с автомобилями премиум-класса и знаем их особенности.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>Гарантия качества</h3>
+                <p>Предоставляем гарантию на все выполненные работы.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>Современное оборудование</h3>
+                <p>Используем профессиональную диагностику и инструмент.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>Честные цены</h3>
+                <p>Никаких скрытых платежей и лишних услуг.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2>О нас</h2>
+
+        <p>
+            Premium Auto Service — профессиональный автосервис,
+            специализирующийся на обслуживании BMW, Mercedes-Benz,
+            Audi и Porsche.
+
+            Мы выполняем диагностику, ремонт двигателей,
+            ремонт подвески, тормозной системы и другие работы
+            любой сложности с использованием современного оборудования.
+
+            Более 12 лет опыта и сотни довольных клиентов.
+        </p>
+    </div>
 </section>
 
 <section id="gallery" class="gallery">
@@ -181,36 +268,39 @@
 
         </div>
 
-        <div class="contact-form"><form>
+        <div class="contact-form">
 
-                <input
-                    type="text"
-                    placeholder="Ваше имя"
-                    required
-                >
+<form id="bookingForm">
 
-                <input
-                    type="tel"
-                    placeholder="Телефон"
-                    required
-                >
+<input
+type="text"
+id="clientName"
+placeholder="Ваше имя"
+required>
 
-                <input
-                    type="text"
-                    placeholder="Марка автомобиля"
-                >
+<input
+type="tel"
+id="clientPhone"
+placeholder="Телефон"
+required>
 
-                <textarea
-                    placeholder="Что требуется сделать?"
-                ></textarea>
+<input
+type="text"
+id="clientCar"
+placeholder="Марка автомобиля">
 
-                <button type="submit">
-                    ОТПРАВИТЬ ЗАЯВКУ
-                </button>
+<textarea
+id="clientWork"
+placeholder="Что требуется сделать?">
+</textarea>
 
-            </form>
+<button type="submit">
+ОТПРАВИТЬ ЗАЯВКУ
+</button>
 
-        </div>
+</form>
+
+</div>
 
 
     </div>
@@ -283,7 +373,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <a href="#">
+    <a href="https://t.me/axmadovv_02">
         <i class="fab fa-telegram"></i>
     </a>
 
@@ -294,6 +384,51 @@
 </div>
 
 <script src="script.js"></script>
+
+<script>
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit", saveRequest);
+
+function saveRequest(e){
+
+e.preventDefault();
+
+let requests =
+JSON.parse(localStorage.getItem("requests")) || [];
+
+requests.push({
+
+name:
+document.getElementById("clientName").value,
+
+phone:
+document.getElementById("clientPhone").value,
+
+car:
+document.getElementById("clientCar").value,
+
+work:
+document.getElementById("clientWork").value,
+
+date:
+new Date().toLocaleString()
+
+});
+
+localStorage.setItem(
+"requests",
+JSON.stringify(requests)
+);
+
+alert("Заявка отправлена");
+
+document.getElementById("bookingForm").reset();
+
+}
+
+</script>
 
 </body>
 </html>
